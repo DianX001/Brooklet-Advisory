@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1b2e4b;
+  --color-gold: #9a7d3a;
+  --color-gold-light: #f5e6c0;
+  --color-surface: #f7f5f0;
+  --color-muted: #6b7a8d;
+  --color-border-custom: #dde3ed;
+
+  --font-candara: "Candara", "Segoe UI", "Optima", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-candara text-navy bg-white antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: var(--color-gold);
+  }
+  .bg-navy {
+    background-color: var(--color-navy);
+  }
+  .border-custom {
+    border-color: var(--color-border-custom);
+  }
+}
